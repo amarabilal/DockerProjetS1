@@ -39,8 +39,10 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 @if(env('SERVER_NAME') == 'serveur1')
                     <h1>Serveur 1</h1>
+                    <a href="http://localhost:8082">Serveur2</a>
                 @elseif(env('SERVER_NAME') == 'serveur2')
                     <h1>Serveur 2</h1>
+                    <a href="http://localhost:8081">Serveur1</a>
                 @endif
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
